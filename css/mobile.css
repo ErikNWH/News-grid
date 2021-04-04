@@ -8,7 +8,7 @@
   grid-column: 1;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 671px) {
   /* navigation */
   #main-nav .social {
     display: none;
