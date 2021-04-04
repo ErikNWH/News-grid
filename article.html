@@ -45,7 +45,7 @@
         </div>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" >about</a></li>
+          <li><a href="about.html">about</a></li>
         </ul>
       </div>
     </nav>
@@ -54,7 +54,7 @@
       <div class="container">
         <div class="page-container">
           <article class="card">
-            <img src="img/articles/ent1.jpg" alt="">
+            <img src="img/articles/ent1.jpg" alt="" />
             <h1 class="l-heading">Lorem ipsum dolor sit amet.</h1>
             <div class="meta">
               <small>
@@ -93,15 +93,25 @@
             </p>
           </article>
           <aside id="categories" class="card">
-            <h2>
-              Categories
-            </h2>
+            <h2>Categories</h2>
             <ul class="list">
-              <li><a href="#"><i class="fas fa-chevron-right">Sports</i></a></li>
-              <li><a href="#"><i class="fas fa-chevron-right">Entertainment</i></a></li>
-              <li><a href="#"><i class="fas fa-chevron-right">Technology</i></a></li>
-              <li><a href="#"><i class="fas fa-chevron-right">Fashion</i></a></li>
-              <li><a href="#"><i class="fas fa-chevron-right">Shopping</i></a></li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right">Sports</i></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right">Entertainment</i></a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right">Technology</i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right">Fashion</i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right">Shopping</i></a>
+              </li>
             </ul>
           </aside>
           <aside class="card bg-secondary">
@@ -130,8 +140,8 @@
         <div>
           <h3>E-mail News letter</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <form>
-            <input type="email" placeholder="Enter Email..." />
+          <form name="contact" method="POST" data-netlify="true">
+            <input type="email" name="email" placeholder="Enter Email..." />
             <input type="submit" value="subscribe" class="btn btn-primary" />
           </form>
         </div>
