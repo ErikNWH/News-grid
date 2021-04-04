@@ -35,7 +35,7 @@ ul {
 }
 
 p {
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 
 img {
@@ -84,19 +84,22 @@ h6 {
 .btn {
   display: inline-block;
   border: none;
-  background: var(--dark-color) !important;
+  background: var(--dark-color);
   color: #fff;
   padding: 0.5rem 1.5rem;
 }
 
-.btn-light {
-  background: var(--light-color);
-}
 .btn-primary {
-  background: var(--primary-color);
+  background: var(--primary-color) !important;
 }
 .btn-secondary {
-  background: var(--secondary-color);
+  background: var(--secondary-color) !important;
+}
+.btn-light {
+  background: var(--light-color) !important;
+}
+.btn-dark {
+  background: var(--dark-color) !important;
 }
 
 .btn:hover {
@@ -159,8 +162,12 @@ h6 {
   padding: 3rem;
 }
 
+.l-heading {
+  font-size: 3rem;
+}
+
 .list li {
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   border-bottom: #555 dotted 1px;
   width: 90%;
 }
@@ -284,6 +291,18 @@ h6 {
   grid-column: 2 / span 2;
 }
 
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
+}
+
+#article .meta .category {
+  margin-top: 0.4rem;
+}
+
 /* footer */
 #main-footer {
   background: var(--dark-color);
@@ -307,15 +326,15 @@ h6 {
 #main-footer .footer-container > *:last-child {
   background: #444;
   grid-column: 1 / span 4;
-  padding: .5rem;
+  padding: 0.5rem;
   text-align: center;
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 #main-footer .footer-container input[type="email"] {
   width: 90%;
-  padding: .5rem;
-  margin-bottom: .5rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 #main-footer .footer-container input[type="submit"] {
